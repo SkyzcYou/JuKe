@@ -40,7 +40,8 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Bmob.initialize(this, "16676baa23cda129e4feeed2e1d89064","BMOB");
+        // 这里填入你自己的BmobKey
+        Bmob.initialize(this, "BmobKey","BMOB");
 
         MyUtil.verifyStoragePermissions(this);
         //检测是否登录

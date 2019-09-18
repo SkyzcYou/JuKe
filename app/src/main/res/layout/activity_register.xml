@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity">
+
+    <include layout="@layout/toobar_base"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:id="@+id/name_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="真实姓名:" />
+
+            <EditText
+                android:id="@+id/edit_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="真实姓名"
+                android:maxLength="7"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textPhoneNumberEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_space">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="手机号:" />
+
+            <EditText
+                android:id="@+id/edit_phoneNumber"
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:maxLength="11"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="手机号" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yanzhengma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textPhoneNumberEdit">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="验证码:" />
+
+            <EditText
+                android:id="@+id/edit_yanzhengma"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="验证码" />
+
+            <Button
+                android:id="@+id/btn_getYanzhengma"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="2"
+                android:background="@drawable/main_loginbtn"
+                android:text="获取验证码"
+                android:textColor="@color/write" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_pwd01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yanzhengma">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="设置密码:" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="设置密码(大于6位)"
+                android:maxLines="1"
+                android:maxLength="16"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_pwd02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_pwd01">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="重复密码:" />
+
+            <EditText
+                android:id="@+id/edit_repassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:maxLines="1"
+                android:maxLength="16"
+                android:hint="重复密码(大于6位)"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_goRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_pwd02"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/main_loginbtn"
+            android:text="注册"
+            android:textColor="@color/write"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

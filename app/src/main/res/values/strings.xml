@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">九星创客</string>
+    <string name="text_id">账号</string>
+    <string name="text_phoneNumber">手机号</string>
+    <string name="text_password">密码</string>
+    <string name="text_login">登录</string>
+    <string name="text_registered">注册</string>
+    <string name="text_nowRegistered">现在注册</string>
+    <string name="text_forget">忘记密码</string>
+    <string name="title_activity_home">九星创客系统</string>
+    <string name="text_notice">【九星创客】颠覆传统零售模式！禁止销售假冒伪劣产品！禁止销售假冒伪劣产品！</string>
+    <string name="home_text_01">帮忙注册</string>
+    <string name="home_text_02">我的团队</string>
+    <string name="home_text_03">审核升级</string>
+    <string name="home_text_04">申请升级</string>
+    <string name="copyright_01">客服QQ:</string>
+<!--    <string name="copyright_02">JuKe</string>
+    <string name="copyright_03">  with </string>-->
+    <string name="copyright_04">1490267590</string>
+
+    <string name="text_editPro">修改密码</string>
+    <string name="text_login_out">退出登录</string>
+
+
+</resources>

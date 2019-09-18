@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity">
+    <include layout="@layout/toobar_base"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--邀请码-->
+        <LinearLayout
+            android:id="@+id/myInvId_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="我的邀请码:" />
+
+            <EditText
+                android:id="@+id/edit_myInvID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint=""
+                android:textColorHint="@color/themeColor"
+                android:maxLength="10"
+                android:maxLines="1" />
+
+        </LinearLayout>
+        <!--商家手机号-->
+        <LinearLayout
+            android:id="@+id/hePhone_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myInvId_space">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="商家手机号:" />
+
+            <EditText
+                android:id="@+id/edit_hePhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="商家手机号码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1" />
+
+        </LinearLayout>
+        <!--商家姓名-->
+        <LinearLayout
+            android:id="@+id/heName_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hePhone_space">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="商家姓名:" />
+
+            <EditText
+                android:id="@+id/edit_heName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="商家姓名"
+                android:maxLength="16"
+                android:maxLines="1" />
+
+        </LinearLayout>
+        <!--商家初始密码-->
+        <LinearLayout
+            android:id="@+id/hePassword_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heName_space">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="初始密码:" />
+
+            <EditText
+                android:id="@+id/edit_hePassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="商家初始密码"
+                android:maxLength="16"
+                android:maxLines="1" />
+
+        </LinearLayout>
+        <!--确认密码-->
+        <LinearLayout
+            android:id="@+id/heRePassword_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hePassword_space">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="确认密码:" />
+
+            <EditText
+                android:id="@+id/edit_reHePassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="重复密码"
+                android:maxLength="16"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hewechat_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heRePassword_space">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="商家微信:" />
+
+            <EditText
+                android:id="@+id/edit_heWechat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="商家微信"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commit_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/hewechat_space">
+
+            <Button
+                android:id="@+id/btn_goRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_loginbtn"
+                android:text="提交"
+                android:textColor="@color/write" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

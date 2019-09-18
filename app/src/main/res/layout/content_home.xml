@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/write"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/hometopbackg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_head"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:onClick="setting"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/timg"
+                app:civ_border_color="#FFFFFFFF"
+                app:civ_border_width="2dp" />
+            <RelativeLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/img_head">
+                <TextView
+                    android:id="@+id/text_phoneNmuber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号："
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/text_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名："
+                    android:layout_below="@+id/text_phoneNmuber"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/text_level"
+                    android:layout_below="@+id/text_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="等级："
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/text_inv"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/text_level"
+                    android:layout_height="wrap_content"
+                    android:text="邀请码："
+                    android:textIsSelectable="true"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:background="@color/write">
+
+
+
+        <com.sunfusheng.marqueeview.MarqueeView
+            android:id="@+id/tv_marquee"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_height="17dp"
+            app:mvAnimDuration="1000"
+            app:mvDirection="bottom_to_top"
+            app:mvInterval="3000"
+            app:mvGravity="center"
+            app:mvTextColor="@android:color/black"
+            app:mvTextSize="14sp"
+
+            app:mvSingleLine="true"/>
+        <com.stx.xhb.xbanner.XBanner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:AutoPlayTime="3000"
+            app:pointsContainerBackground="#44aaaaaa"
+            app:pointNormal="@drawable/shape_point_normal"
+            app:pointSelect="@drawable/shape_point_select"
+            app:pointsPosition="RIGHT"
+            app:tipTextSize="12sp"
+            app:isShowNumberIndicator="true"
+            app:isShowIndicatorOnlyOne="true"
+            app:pageChangeDuration="800"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:background="@color/home_bakg"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:id="@+id/tableRow01"
+                android:layout_margin="30dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:onClick="menu_one"
+                    android:background="@drawable/homefour__back">
+
+                    <top.skyzc.juke.myview.ResizableImageView
+                        android:id="@+id/imageView01"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/img01_invitation"/>
+
+                    <TextView
+                        android:id="@+id/textView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView01"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/home_text_01"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:onClick="menu_two"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/homefour__back">
+
+                    <top.skyzc.juke.myview.ResizableImageView
+                        android:id="@+id/imageView02"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/img02_my"/>
+
+                    <TextView
+                        android:id="@+id/textView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView02"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/home_text_02"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow02"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:onClick="menu_there"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/homefour__back">
+
+                    <top.skyzc.juke.myview.ResizableImageView
+                        android:id="@+id/imageView03"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/img03_auditor"/>
+
+                    <TextView
+                        android:id="@+id/textView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView03"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/home_text_03"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:onClick="menu_four"
+                    android:background="@drawable/homefour__back">
+
+
+
+                    <top.skyzc.juke.myview.ResizableImageView
+                        android:id="@+id/imageView04"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/img04_real"/>
+
+                    <TextView
+                        android:id="@+id/textView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView04"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/home_text_04"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

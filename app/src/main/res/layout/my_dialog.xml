@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homefour__back" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="升级说明"
+            android:textColor="@color/themeColor"
+            android:textSize="20dp" />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:text="余额不足，请先充值"-->
+            <!--android:layout_below="@+id/tip"-->
+            <!--android:textSize="20dp" />-->
+
+        <TextView
+            android:id="@+id/text_copyTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tip"
+            android:layout_marginStart="20dp"
+            android:textIsSelectable="true"
+            android:text="长按复制微信号"/>
+        <LinearLayout
+            android:id="@+id/space_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text_copyTip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/space_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_oneWechatHello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textIsSelectable="true"
+                    android:text="审核员1微信号："/>
+
+                <TextView
+                    android:id="@+id/text_twoWechatHello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textIsSelectable="true"
+                    android:text="审核员2微信号："/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/space_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_oneWechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textIsSelectable="true"
+                    android:text="-----"/>
+                <TextView
+                    android:id="@+id/text_twoWechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textIsSelectable="true"
+                    android:text="-----"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/space_there"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_copy01"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/mydialog_btncopy"
+                    android:textColor="@color/write"
+                    android:layout_marginBottom="10dp"
+                    android:text="复制"/>
+                <Button
+                    android:id="@+id/btn_copy02"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/mydialog_btncopy"
+                    android:textColor="@color/write"
+                    android:text="复制"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#c0c0c0"
+            android:layout_above="@+id/ll_btn" />
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="取消"
+                android:textSize="17dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#c0c0c0"/>
+
+            <TextView
+                android:id="@+id/text_commit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/themeColor"
+                android:text="提交升级"
+                android:textSize="17dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

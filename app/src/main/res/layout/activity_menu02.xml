@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/home_bakg"
+    tools:context=".activity.SettingActivity">
+    <include layout="@layout/toobar_base"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/write"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成员信息"
+            android:textStyle="bold"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/tv_allSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一星及一星以上人数：0"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

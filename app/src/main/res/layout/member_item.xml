@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:padding="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:elevation="0dp">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:id="@+id/space_info"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="姓名：Skyzc"/>
+            <TextView
+                android:id="@+id/text_phoneNmuber"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="手机号：15985428639"/>
+            <TextView
+                android:id="@+id/text_level"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="等级：九星会员"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/img_wechat"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"/>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

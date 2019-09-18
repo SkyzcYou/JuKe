@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="themeColor">#FD9701</color>
+    <color name="colorPrimary">#FD9701</color>
+    <color name="colorPrimaryDark">#A76404</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="loginout">#BB0C00</color>
+    <color name="write">#FFFFFF</color>
+    <color name="home_bakg">#F4F4F4</color>
+    <color name="goVerCode">#C0C0C0</color>
+
+</resources>
